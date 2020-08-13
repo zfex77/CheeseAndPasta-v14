@@ -1,0 +1,23 @@
+const {MessageEmbed, Channel} = require('discord.js')
+const api = require("imageapi.js")
+module.exports={
+name: "dog",
+description: "GET DOG IMAGES!!!",
+category: "fun",
+run: async(bot,message,args)=>{
+let subreddits = [
+"dogs"
+]
+let subreddit = subreddits[Math.floor(Math.random()*subreddits.length)]
+console.log(subreddit)
+let img = await api(subreddit)
+console.log(img)
+console.log(subreddit)
+const Embed = new MessageEmbed()
+        Embed.setTitle(`A ${subreddit} image from r/${subreddit} (Some images are somewhat pornogrpahic, I don't know what causes this)`)
+        Embed.setURL(`https://www.youtube.com/watch?v=dQw4w9WgXcQ`)
+        Embed.setColor('RANDOM')
+        Embed.setImage(img)
+message.channel.send(Embed)
+    }
+}
