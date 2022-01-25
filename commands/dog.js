@@ -6,7 +6,27 @@ description: "GET DOG IMAGES!!!",
 category: "fun",
 run: async(bot,message,args)=>{
 let subreddits = [
-"dogs"
+"dogs",
+"dogberg",
+"dogpictures",
+"goldenretrievers",
+"puppies",
+"shiba",
+"ShibaInu",
+"rarepuppers",
+"banpitbulls",
+"Corgi",
+"Bostonterrier",
+"Pomeranians",
+"Frenchbulldogs",
+"pugs",
+"poodles",
+"akita",
+"fluffydogs",
+"dogswithsocks",
+"dogswitheyebrows",
+"DogsWithCatHeads",
+"dogswithjobs"
 ]
 let subreddit = subreddits[Math.floor(Math.random()*subreddits.length)]
 console.log(subreddit)
