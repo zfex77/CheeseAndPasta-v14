@@ -1,3 +1,5 @@
+const token = 'OTM1NzE4NzU0OTI1NTU1NzMy.YfCt_w.Jh3Eyhxk4ak7Ngx3xzqGohsXJbs'
+
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
@@ -31,11 +33,11 @@ client.on('message', message =>{
     let cmd = client.commands.get(command);
       if (!cmd) return;
 if (cmd) cmd.run(client, message, args)
-    
+
 
 
 
 
 });
 
-client.login('OTM1NzE4NzU0OTI1NTU1NzMy.YfCt_w.Jh3Eyhxk4ak7Ngx3xzqGohsXJbs')
+client.login(process.env.token) 
