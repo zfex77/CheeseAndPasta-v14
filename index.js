@@ -1,5 +1,3 @@
-const token = 'OTM1NzE4NzU0OTI1NTU1NzMy.YfCt_w.-6SleIia-n75l48StkaAGrXNVAo'
-
 const Discord = require('discord.js');
 
 const client = new Discord.Client();
@@ -40,4 +38,4 @@ if (cmd) cmd.run(client, message, args)
 
 });
 
-client.login('OTM1NzE4NzU0OTI1NTU1NzMy.YfCt_w.-6SleIia-n75l48StkaAGrXNVAo')
+client.login('OTM1NzE4NzU0OTI1NTU1NzMy.YfCt_w.Jh3Eyhxk4ak7Ngx3xzqGohsXJbs')
