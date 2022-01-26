@@ -6,7 +6,36 @@ description: "GET CAT IMAGES!!!",
 category: "fun",
 run: async(bot,message,args)=>{
 let subreddits = [
-"cats"
+"cats",
+"kitten",
+"britishshorthair",
+"scottishfold",
+"sphynx",
+"ExoticShorthair",
+"mainecoons",
+"MunchkinCats",
+"himalayancats",
+"manx",
+"BombayCat",
+"SiberianCats",
+"persiancat",
+"ragdollcats",
+"ragdolls",
+"Siamesecats",
+"Abyssinians",
+"AmericanShorthair",
+"NorwegianForestCats",
+"burmesecats",
+"birmans",
+"russianblue",
+"devonrex",
+"cornishrex",
+"Siamesecats",
+"turkishangoras",
+"AmericanCurl",
+"ocicat",
+"RagamuffinCats",
+"Tonkinese"
 ]
 let subreddit = subreddits[Math.floor(Math.random()*subreddits.length)]
 console.log(subreddit)
