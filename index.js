@@ -1,10 +1,10 @@
-const token = 'OTM1NzE4NzU0OTI1NTU1NzMy.YfCt_w.Jh3Eyhxk4ak7Ngx3xzqGohsXJbs'
+require("dotenv").config();
 
-const Discord = require('discord.js');
+const { Client } = require('discord.js');
+const Discord = require('discord.js')
+const client = new Client();
 
-const client = new Discord.Client();
-
-const prefix = 'p!'
+const PREFIX = 'p!'
 
 const fs = require('fs');
 const cat = require('./commands/cat');
@@ -18,26 +18,13 @@ for(const file of commandFiles){
     client.commands.set(command.name, command)
 }
 
-
-client.once('ready', () =>{
+client.on('ready', () => {
     console.log('This bot is online!');
-    client.user.setActivity('Naruto', { type: "WATCHING"})
+    client.user.setActivity('One Piece', { type: "WATCHING"})
 });
 
-client.on('message', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
-
-    const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
-
-    let cmd = client.commands.get(command);
-      if (!cmd) return;
-if (cmd) cmd.run(client, message, args)
-
-
-
-
-
+client.on('message', (message) => {
+  console.log(message.content);
 });
 
-client.login(process.env.token) 
+client.login(process.env.DISCORDJS_BOT_TOKEN);
