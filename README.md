@@ -1,4 +1,9 @@
 
+# Project Title
+
+A brief description of what this project does and who it's for
+
+
 # CheeseAndPastaBot
 
 
@@ -25,3 +30,17 @@ To run the bot itself, do:
 - Can provide cat, dog, food, pasta, cute, and many other types of images!
 - Pasta..............
 
+## Installation of Requirements
+
+To **properly** install the node modules, delete the folder provided when you clone this repo, then use something like [Virtual Studio Code](https://code.visualstudio.com/) or [Replit](https://replit.com/) and run `node install discord.js` in the terminal (while in the folder) This shound install the required modules for the basics of the bots to work.
+
+
+## Other Stuff
+
+Before I end this README.md file I do have some other stuff to say.
+
+- This is only usable with credit in some way whatsoever, if you say that you created this (unless editing **major** parts), you  may not use it  and if you do I will try to get rid of it.
+
+- This is written in javascript and I would recommend that you use VSC. Something that you need to install if you are going for VSC is that you need to download node.js because without it, any of the commands I just listed will not work.
+
+- Lastly, most of this code is from stack overflow LMAOOOOOOO
